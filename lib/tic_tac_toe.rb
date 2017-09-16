@@ -76,7 +76,7 @@ def draw?
 end
 
 def over?
-  draw? == true || won? != nil
+  won? != nil || draw? == true
 end
 
 def winner
